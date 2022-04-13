@@ -27,12 +27,18 @@
     visibility: hidden;
     opacity: 0;
     transition: all 0.35s ease-in;
-    width: 450px;
+    width: 350px;
     height: 250px;
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
     transition: opacity 0.8s;
+    z-index: 1;
+    background-color: #333333ae;
+    -webkit-transition: all 0.35s ease-in;
+    -moz-transition: all 0.35s ease-in;
+    -ms-transition: all 0.35s ease-in;
+    -o-transition: all 0.35s ease-in;
 }
 
 .modal-content {
@@ -53,4 +59,8 @@
     -moz-transition: opacity 0.8s;
     -ms-transition: opacity 0.8s;
     -o-transition: opacity 0.8s;
+}
+
+.buttonText {
+    content: "Read";
 }
