@@ -10,3 +10,47 @@
 .item-book {
     border: 1px solid black;
 }
+.modal-close {
+    font-size: 35px;
+}
+#icon {
+    align-items: flex-end;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 50px auto;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+    width: 450px;
+    height: 250px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    transition: opacity 0.8s;
+}
+
+.modal-content {
+    justify-self: center;
+    align-self: center;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s;
+    -webkit-transition: opacity 0.8s;
+    -moz-transition: opacity 0.8s;
+    -ms-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+}

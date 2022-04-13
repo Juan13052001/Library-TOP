@@ -46,3 +46,37 @@ function listBooks(myLibrary) {
 }
 
 const agregarLibro = document.getElementById("addBook");
+const botonAgregarLibro = document.querySelector(".modal-dialog");
+const openModal = document.querySelector("#add");
+const modal = document.querySelector(".modal");
+console.log(openModal);
+const closeModal = document.querySelector(".modal-close");
+const isVisible = "is-visible";
+openModal.addEventListener("click", () => {
+    modal.classList.add(isVisible);
+});
+
+closeModal.addEventListener("click", (e) => {
+    modal.classList.remove(isVisible);
+});
+
+window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        modal.classList.remove(isVisible);
+    }
+});
+let inputAutor = document.querySelector("#author");
+let inputTitle = document.querySelector("#title");
+let inputPages = document.querySelector("#pages");
+
+botonAgregarLibro.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log("Enviando informacion");
+
+    let autor = inputAutor.value;
+    let title = inputTitle.value;
+    let paginas = inputPages.value;
+
+    console.log(autor, title, paginas);
+    // const book = new Book(title, author, paginas,)
+});
