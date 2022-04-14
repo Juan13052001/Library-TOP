@@ -1,49 +1,140 @@
+:root {
+    --wisteria: #b19cd9ff;
+    --buff: #f0da81ff;
+    --tea-green: #c9f1c9ff;
+    --baby-blue-eyes: #a7c7e7ff;
+    --danger: #e34645;
+    --blue-eyes: #13adcd;
+    --light-coral: #f28482ff;
+    --linen: #f7ede2ff;
+}
+
+body {
+    background-color: var(--tea-green);
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    margin: 0px;
+    height: 100px;
+    background-color: var(--light-coral);
+    display: flex;
+}
+.icon-book {
+    color: var(--linen);
+    margin: 10px 30px;
+}
+
+h1 {
+    margin: 0 30px;
+    padding: 10px 25px;
+    font-size: 50px;
+    font-weight: normal;
+    width: 300px;
+}
+
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    grid-template-rows: repeat(auto-fit, minmax(350px, 350px));
     gap: 25px;
     text-align: center;
     font-size: 24px;
 }
 
 .item-book {
-    border: 1px solid black;
+    background-color: var(--buff);
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
+
+.button-read {
+    width: 90%;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    height: 40px;
+    background-color: var(--baby-blue-eyes);
+    font-weight: bold;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.button-danger {
+    background-color: var(--danger);
+}
+
+.remove-book {
+    width: 90%;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: var(--danger);
+    color: white;
+    font-weight: bold;
+}
+
+i {
+    width: 30px;
+    height: 30px;
+}
+
 .modal-close {
     font-size: 35px;
 }
+
 #icon {
     align-items: flex-end;
+    color: var(--baby-blue-eyes);
 }
+
 .modal {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 50px auto;
+    margin: 100px auto;
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
     transition: all 0.35s ease-in;
-    width: 350px;
-    height: 250px;
-    border: 1px solid black;
+    width: 400px;
+    height: 350px;
+    padding: 10px 15px;
+    border: 3px solid var(--wisteria);
+    border-radius: 20px;
     display: flex;
     justify-content: space-between;
     transition: opacity 0.8s;
     z-index: 1;
-    background-color: #333333ae;
-    -webkit-transition: all 0.35s ease-in;
-    -moz-transition: all 0.35s ease-in;
-    -ms-transition: all 0.35s ease-in;
-    -o-transition: all 0.35s ease-in;
+    background-color: #fff;
+    -webkit-transition: ;
+    -moz-transition: ;
+    -ms-transition: ;
+    -o-transition: ;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .modal-content {
     justify-self: center;
     align-self: center;
+    width: 350px;
+    height: 350px;
 }
 
 .modal {
@@ -61,6 +152,50 @@
     -o-transition: opacity 0.8s;
 }
 
-.buttonText {
-    content: "Read";
+#author,
+#title,
+#pages {
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 2px solid var(--wisteria);
+    height: 24px;
+    margin: 5px 0;
+}
+
+label {
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#addBook {
+    width: 100%;
+    height: 35px;
+    background-color: var(--buff);
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#add {
+    width: 350px;
+    height: 40px;
+    margin: 25px 30%;
+    background-color: var(--wisteria);
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }

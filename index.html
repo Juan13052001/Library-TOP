@@ -15,10 +15,36 @@
             integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
             crossorigin="anonymous"
         ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="normalize.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+            integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+            crossorigin="anonymous"
+        ></script>
         <link rel="stylesheet" href="index.css" />
         <title>Document</title>
     </head>
     <body>
+        <header>
+            <div>
+                <i class="fa-solid fa-book fa-4x icon-book"></i>
+            </div>
+            <div>
+                <h1>Library</h1>
+            </div>
+        </header>
         <div class="container"></div>
         <button data-open="modal" type="button" id="add">Add Book</button>
         <div class="modal" id="modal">
@@ -31,7 +57,7 @@
                         name="author"
                         placeholder="Author"
                         autocomplete="off"
-                        require
+                        required
                         type="text"
                     />
                     <br />
@@ -41,6 +67,7 @@
                         name="title"
                         id="title"
                         placeholder="Title"
+                        required
                     /><br />
                     <label for="pages">Pages</label>
                     <input
@@ -48,6 +75,7 @@
                         name="pages"
                         id="pages"
                         placeholder="Pages"
+                        required
                     />
                     <br />
 
@@ -64,6 +92,9 @@
                 <i class="fa-solid fa-xmark icon"></i>
             </div>
         </div>
+        <script>
+            feather.replace();
+        </script>
 
         <script src="index.js"></script>
     </body>
